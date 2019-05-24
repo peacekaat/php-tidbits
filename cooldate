@@ -2,3 +2,4 @@
 $cooldate = strtotime($data->node_data_field_event_datetime_field_event_datetime_value);
 print date('D M d', $cooldate);
 ?>
+
