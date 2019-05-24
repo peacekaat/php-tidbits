@@ -1,0 +1,6 @@
+<?php
+$path = 'node/' . $data->nid;
+if(isset($data->node_data_field_slidelink_field_slidelink_url)) {
+print $data->node_data_field_slidelink_field_slidelink_url;}
+else print drupal_get_path_alias($path);
+?>
