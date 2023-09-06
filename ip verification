@@ -1,6 +1,6 @@
 <?php
-$startip = "165.138.239.0";
-$endip = "165.138.239.255";
+$startip = "x.x.x.0";
+$endip = "x.x.x.255";
 $targetip = $_SERVER['REMOTE_ADDR'];
 
 $startlong = ip2long($startip);
