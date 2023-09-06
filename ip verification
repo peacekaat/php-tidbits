@@ -1,0 +1,13 @@
+<?php
+$startip = "165.138.239.0";
+$endip = "165.138.239.255";
+$targetip = $_SERVER['REMOTE_ADDR'];
+
+$startlong = ip2long($startip);
+$endlong = ip2long($endip);
+$targetlong = ip2long($targetip);
+
+if ($startlong <= $targetlong AND $targetlong <= $endlong)
+print $data->node_data_field_link_field_link_url; 
+else print $data->node_data_field_userlink_field_userlink_url; 
+?>
