@@ -1,0 +1,24 @@
+<?php
+function event_countdown($event_date) {
+    // Get the current date and the event date
+    $current_date = new DateTime();
+    $event_date = new DateTime($event_date);
+    
+    // Calculate the interval between the current date and the event date
+    $interval = $event_date->diff($current_date);
+    
+    // Output the countdown
+    if ($interval->format('%R') == '-') {
+        // Event has already occurred
+        echo "Solar eclipse has already occurred.";
+    } else {
+        // Event is in the future
+        $days = $interval->days;
+        echo "Days until solar eclipse: $days";
+    }
+}
+
+// Usage example
+$event_date = "2024-04-08"; // Change this to your event date
+event_countdown($event_date);
+?>
